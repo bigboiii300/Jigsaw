@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ikiryakov.jigsaw.Controller">
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" onAction="#helpDialog" text="About" />
+        </Menu>
+    </MenuBar>
+    <Pane fx:id="pane" prefHeight="498.0" prefWidth="600.0">
+        <Canvas fx:id="canvas" height="450.0" width="450.0" />
+        <Button fx:id="stopGame" layoutX="503.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#finishGameDialog" prefHeight="72.0" prefWidth="175.0" text="Завершить игру" />
+        <Text fx:id="timer" layoutX="535.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.0000000000001">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+
+    </Pane>
+</VBox>
